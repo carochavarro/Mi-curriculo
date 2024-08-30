@@ -7,7 +7,7 @@
 header nav{ 
     align-items: center;
     background-color: #000;
-    height: 60px;
+    height: 70px;
     margin-top: auto;
     
 }
@@ -18,34 +18,37 @@ header nav ul{
 }
 
 header nav ul li{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 
 ul{
     justify-content: center;
-    gap: 30px;
-    color: white;
+    gap: 35px;
     font-size: 10px;
 
 }
+a{
+  text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
   
 .section-general {
-
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-image: url("https://c.wallhere.com/photos/cf/24/nyc_blackandwhite_bw_usa_blancoynegro_nikon_unitedstates_noiretblanc-764490.jpg!d");
     padding: 20px;
-    text-align: center;
     height: 200px;
   }
   
 .section-general h1 {
+    display: flex;
     flex: 1;
     font-size: 2rem;
     font-weight: bold;
-    gap: 500px;
   }
   
   #titulo1, #titulo2 {
@@ -76,5 +79,63 @@ p {
     line-height: 1.6;
   }
 
-  
+.section-intro{
+    background-color: rgb(244, 241, 234);
+}
+
+.section-galeria {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: black;
+}
+
+.gallery {
+
+  width: 150px;
+  height: auto;
+}
+
+.section-general{
+    display: grid;
+    grid-template-areas:
+    "texto1  texto2";
+ }
+
+#titulo1{
+    grid-area: texto1;
+}
+
+#titulo2{
+  grid-area: texto2;
+}  
+
+.grid-container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns:  30%  70%; /* Ajusta las proporciones de las columnas */
+
+}
+
+.section-sobremi-h1 {
+  background-color: #333;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-sobremi {
+  text-align: right;
+  background-color: rgb(244, 241, 234);
+}
+
+
+
+
+
   
