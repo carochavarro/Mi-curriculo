@@ -28,15 +28,15 @@ ul{
     font-size: 10px;
 
 }
-a{
+.nav-a{
   text-decoration: none;
     color: white;
-    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease, color 0.3s ease; 
 }
   
 a:hover {
-  transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
-  color: #333; /* Cambia el color del texto al pasar el cursor */
+  transform: scale(1.1); 
+  color: #333; 
 }
 .section-general {
     display: flex;
@@ -57,7 +57,7 @@ a:hover {
     align-items: center;
   }
   
-  #titulo1, #titulo2 {
+#titulo1, #titulo2 {
     gap: 100px;
     color: white;
     margin: 0;
@@ -96,7 +96,7 @@ p {
 }
 
 .section-galeria {
-  background-color: #000; /* Fondo oscuro para que resalte la galería */
+  background-color: #000; 
   padding: 50px 0;
   text-align: center;
   color: #fff;
@@ -105,16 +105,16 @@ p {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 10px; /* Espacio entre imágenes */
+  gap: 10px; 
   justify-items: center;
   align-items: center;
 }
 
 .gallery {
   width: 100%;
-  max-width: 150px; /* Controla el tamaño máximo de las imágenes */
+  max-width: 150px; 
   height: auto;
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px; 
 }
 
 #titulo1{
@@ -143,7 +143,11 @@ p {
   align-items: center;
   justify-content: center;
 }
-
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .section-sobremi {
   display: grid;
   justify-content: center;
@@ -169,7 +173,7 @@ p {
   grid-template-areas: 
   "sitio1 sitio2"
   "sitio3 sitio4";
-  grid-template-columns: auto;
+  grid-template-columns: 50%;
   grid-template-rows: auto;
   height: 50vh;
  
@@ -188,10 +192,10 @@ p {
 } 
 
 #section-blog-aside4 {
-  background-image: url("./IMG/fiesta.jpeg"); /* Imagen de fondo */
-  background-size: cover; /* Asegura que la imagen cubra todo el área */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-image: url("./IMG/fiesta.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 
 }
 
@@ -203,4 +207,35 @@ p {
   justify-content: center;  
   border: 0.5px solid black; 
 }
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(247, 246, 244);
+  color: #333;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20Spx;
+}
+
+.footer-info1, .footer-info2 {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 20px;
+}
+
+.footer-info1 a, .footer-info2 a {
+  text-decoration: none; 
+  color: black; 
+}
+
+.footer-copi {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
 
