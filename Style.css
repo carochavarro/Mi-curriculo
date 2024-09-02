@@ -1,241 +1,246 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 header nav{ 
-    align-items: center;
-    background-color: #000;
-    height: 70px;
-    margin-top: auto;
-    
+  align-items: center;
+  background-color: #000;
+  height: 70px;
+  margin-top: auto;
+  
 }
 
 header nav ul{
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 header nav ul li{
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 
 ul{
-    justify-content: center;
-    gap: 35px;
-    font-size: 10px;
+  justify-content: center;
+  gap: 35px;
+  font-size: 10px;
 
 }
 .nav-a{
-  text-decoration: none;
-    color: white;
-    transition: transform 0.3s ease, color 0.3s ease; 
+text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease; 
 }
-  
+
 a:hover {
-  transform: scale(1.1); 
-  color: #333; 
+transform: scale(1.1); 
+color: #333; 
 }
 .section-general {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url("https://c.wallhere.com/photos/cf/24/nyc_blackandwhite_bw_usa_blancoynegro_nikon_unitedstates_noiretblanc-764490.jpg!d");
-    padding: 20px;
-    height: 200px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("https://c.wallhere.com/photos/cf/24/nyc_blackandwhite_bw_usa_blancoynegro_nikon_unitedstates_noiretblanc-764490.jpg!d");
+  padding: 20px;
+  height: 200px;
+}
+
 .section-general h1 {
-    display: flex;
-    flex: 1;
-    font-size: 2rem;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  flex: 1;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
 #titulo1, #titulo2 {
-    gap: 100px;
-    color: white;
-    margin: 0;
-  }
-  
+  gap: 100px;
+  color: white;
+  margin: 0;
+}
+
 .imagenprincipal {
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-top: -200px;
-  }
-  
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-top: -200px;
+}
+
 section {
-    padding: 40px;
-    background-color: #fff;
-    text-align: center;
-    position: relative;
-  }
-  
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
 p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-  }
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
 
 .section-intro{
-    background-color: rgb(244, 241, 234);
+  background-color: rgb(244, 241, 234);
 }
 
 .section-galeria {
-  display: grid;
-  grid-auto-flow: column;
-  background-color: black;
+display: grid;
+grid-auto-flow: column;
+background-color: black;
 }
 
 .section-galeria {
-  background-color: #000; 
-  padding: 50px 0;
-  text-align: center;
-  color: #fff;
+background-color: #000; 
+padding: 50px 0;
+text-align: center;
+color: #fff;
 }
 
 .gallery-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 10px; 
-  justify-items: center;
-  align-items: center;
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+gap: 10px; 
+justify-items: center;
+align-items: center;
 }
 
 .gallery {
-  width: 100%;
-  max-width: 150px; 
-  height: auto;
-  border-radius: 10px; 
+width: 100%;
+max-width: 150px; 
+height: auto;
+border-radius: 10px; 
+}
+.img-family, .gallery:hover{
+  transition: transform 0.3s ease; /* Transición suave */
+  cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.img-family:hover, .gallery:hover {
+  transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
 }
 
 #titulo1{
-    grid-area: texto1;
+  grid-area: texto1;
 }
 
 #titulo2{
-  grid-area: texto2;
+grid-area: texto2;
 }  
 
 .grid-container {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns:  30%  70%; /* Ajusta las proporciones de las columnas */
+margin: 0;
+padding: 0;
+display: grid;
+grid-template-columns:  30%  70%; /* Ajusta las proporciones de las columnas */
 }
 
 .section-sobremi-h1 {
-  background-color: rgb(95, 98, 81);
-  font-size: 25px;
-  color: white;
-  font-weight: bold;
-  writing-mode: vertical-lr;
-  transform: rotate(180deg); 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+background-color: rgb(95, 98, 81);
+font-size: 25px;
+color: white;
+font-weight: bold;
+writing-mode: vertical-lr;
+transform: rotate(180deg); 
+display: flex;
+align-items: center;
+justify-content: center;
 }
 h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .section-sobremi {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  background-color: rgb(244, 241, 234);
-  gap: 20px;
+display: grid;
+justify-content: center;
+align-items: center;
+text-align: justify;
+background-color: rgb(244, 241, 234);
+gap: 20px;
 
 }
 
 .img-family{
-  display: grid;
-  width: 250px;
-  height: auto;
-  text-align: center;
-  justify-content: center;
+display: grid;
+width: 250px;
+height: auto;
+text-align: center;
+justify-content: center;
 }
 .section-blog{
-  margin: 0;
-  padding: 0; 
-  background-color: rgb(231, 222, 213);
-  display: grid;
-  grid-template-areas: 
-  "sitio1 sitio2"
-  "sitio3 sitio4";
-  grid-template-columns: 50%;
-  grid-template-rows: auto;
-  height: 50vh;
- 
+margin: 0;
+padding: 0; 
+background-color: rgb(231, 222, 213);
+display: grid;
+grid-template-areas: 
+"sitio1 sitio2"
+"sitio3 sitio4";
+grid-template-columns: 50%;
+grid-template-rows: auto;
+height: 50vh;
+
 }
 #section-blog-aside1{
-  grid-area: sitio1; 
+grid-area: sitio1; 
 }
 #section-blog-2{
-  grid-area: sitio2;
+grid-area: sitio2;
 }
 #section-blog-aside3{
-  grid-area: sitio3;
+grid-area: sitio3;
 }
 #section-blog-aside4{
-  grid-area: sitio4;
+grid-area: sitio4;
 } 
 
 #section-blog-aside4 {
-  background-image: url("./IMG/fiesta.jpeg"); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+background-image: url("./IMG/fiesta.jpeg"); 
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat; 
 
 }
 
 .border {
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  border: 0.5px solid black; 
+font-size: 30px;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;  
+border: 0.5px solid black; 
 }
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: rgb(247, 246, 244);
-  color: #333;
+text-align: center;
+padding: 10px;
+background-color: rgb(247, 246, 244);
+color: #333;
 }
 
 .footer-links {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20Spx;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20Spx;
 }
 
 .footer-info1, .footer-info2 {
-  font-weight: bold;
-  font-size: 16px;
-  margin: 0 20px;
+font-weight: bold;
+font-size: 16px;
+margin: 0 20px;
 }
 
 .footer-info1 a, .footer-info2 a {
-  text-decoration: none; 
-  color: black; 
+text-decoration: none; 
+color: black; 
 }
 
 .footer-copi {
-  font-size: 12px;
-  color: #666;
-  margin-top: 10px;
+font-size: 12px;
+color: #666;
+margin-top: 10px;
 }
-
-
-
