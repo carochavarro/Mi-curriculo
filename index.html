@@ -6,81 +6,90 @@
     <title>Mi curriculo</title>
     <link rel="stylesheet" href="./Style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="nav-a" href="">WELCOME</a></li>
-          <li><a class="nav-a" href="">GALLERY</a></li>
-          <li
-            style="
-              font-size: 20px;
-              align-items: center;
-              justify-content: center;
-              margin-top: 20px;
-            "
-          >
-            <a class="nav-a" href=""><strong>About Me</strong></a>
-          </li>
-          <li><a class="nav-a" href="">BLOG</a></li>
-          <li><a class="nav-a" href="">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="section-general">
-        <h1 id="titulo1">LIFE IS A PARTY</h1>
-        <h1 id="titulo2">DO IT IN STYLE</h1>
-      </section>
-      <section class="section-intro">
-        <img class="imagenprincipal" src="./IMG/img3.jpeg" alt="Imagen mia" />
-        <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nulla
-        eveniet voluptate aperiam nemo accusamus deserunt quas explicabo?
-        Placeat rerum animi aperiam odit tempora impedit cum aliquam assumenda
-        nisi ipsum?
-      </section>
-      <section class="section-galeria">
-        <h1>GALLERY</h1>
-        <div class="gallery-container">
-          <img class="gallery" src="./IMG/img5.jpeg" alt="img1" />
-          <img class="gallery" src="./IMG/nueva.jpeg" alt="img7" />
-          <img class="gallery" src="./IMG/Broo.jpeg" alt="img5" />
-          <img class="gallery" src="./IMG/img7.jpeg" alt="img1" />
-          <img class="gallery" src="./IMG/img1.jpeg" alt="img7" />
-          <img class="gallery" src="./IMG/img4.jpeg" alt="img5" />
-        </div>
-      </section>
-      <section class="grid-container">
-        <section class="section-sobremi-h1">ABOUT ME</section>
-        <section class="section-sobremi">
-          <img class="img-family" src="./IMG/familia.jpeg" alt="" />
-          <br />
-          Mi nombre es Carolina Chavarro Chavarro. Nací el 23 de febrero de 2002
-          en Oporapa, Huila. Actualmente, soy estudiante de octavo semestre de
-          Ingeniería de Sistemas en la Universidad de la Amazonia. Mi familia
-          está conformada por mis padres, José Edgar Chavarro y Diva Chavarro, y
-          mis dos hermanas, Yarithsa Chavarro Chavarro y su esposo Mauricio
-          Villalobos, la mayor, y Jimena Chavarro, la menor. Además, compartimos
-          nuestro hogar con Brooklin, la mascota de mi hermana mayor.
+  <div>
+    <body id="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a class="nav-a" href="#welcome">WELCOME</a></li>
+            <li><a class="nav-a" href="#gallery">GALLERY</a></li>
+            <li
+              style="
+                font-size: 20px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+              "
+            >
+              <a class="nav-a" href="#aboutMe"><strong>About Me</strong></a>
+            </li>
+            <li><a class="nav-a" href="#blog">BLOG</a></li>
+            <li><a class="nav-a" href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section-general" id="welcome">
+          <h1 id="titulo1">LIFE IS A PARTY</h1>
+          <h1 id="titulo2">DO IT IN STYLE</h1>
         </section>
-      </section>
-      <section class="section-blog">
-        <aside class="border" id="section-blog-aside1">
-          INGENIERÍA DE SISTEMAS
-        </aside>
-        <aside class="border" id="section-blog-aside2">BÁSQUETBOL</aside>
-        <aside class="border" id="section-blog-aside3">CINE Y MÚSICA</aside>
-        <aside class="border" id="section-blog-aside4"></aside>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-links">
+        <section class="section-intro">
+          <img class="imagenprincipal" src="./IMG/img3.jpeg" alt="Imagen mia" />
+          <br />
+          <p>
+            Mi nombre es Carolina Chavarro y soy estudiante de Ingeniería de
+            Sistemas en la Universidad de la Amazonia. En esta página, quiero
+            compartir un poco sobre mí, mis intereses, y mi familia. En mi
+            tiempo libre, disfruto de actividades que me permiten crecer y
+            aprender, tanto en el ámbito académico como personal. Mi familia es
+            una parte fundamental de mi vida, y estoy agradecida por el apoyo
+            constante que recibo de ellos. Espero que encuentres esta página
+            interesante y que te permita conocerme un poco mejor. 
+            ¡Gracias por visitar!
+          </p>
+        </section>
+        <section class="section-galeria" id="gallery">
+          <h1>GALLERY</h1>
+          <div class="gallery-container">
+            <img class="gallery" src="./IMG/img5.jpeg" alt="img1" />
+            <img class="gallery" src="./IMG/nueva.jpeg" alt="img7" />
+            <img class="gallery" src="./IMG/Broo.jpeg" alt="img5" />
+            <img class="gallery" src="./IMG/img7.jpeg" alt="img1" />
+            <img class="gallery" src="./IMG/img1.jpeg" alt="img7" />
+            <img class="gallery" src="./IMG/img4.jpeg" alt="img5" />
+          </div>
+        </section>
+        <section class="grid-container">
+          <section class="section-sobremi-h1" id="aboutMe">ABOUT ME</section>
+          <section class="section-sobremi">
+            <img class="img-family" src="./IMG/familia.jpeg" alt="" />
+            <br />
+            Mi nombre es Carolina Chavarro Chavarro. Nací el 23 de febrero de
+            2002 en Oporapa, Huila. Actualmente, soy estudiante de octavo
+            semestre de Ingeniería de Sistemas en la Universidad de la Amazonia.
+            Mi familia está conformada por mis padres, José Edgar Chavarro y
+            Diva Chavarro, y mis dos hermanas, Yarithsa Chavarro Chavarro y su
+            esposo Mauricio Villalobos, la mayor, y Jimena Chavarro, la menor.
+            Además, compartimos nuestro hogar con Brooklin, la mascota de mi
+            hermana mayor.
+          </section>
+        </section>
+        <section class="section-blog" id="blog">
+          <aside class="border" id="section-blog-aside1">
+            INGENIERÍA DE SISTEMAS
+          </aside>
+          <aside class="border" id="section-blog-aside2">BÁSQUETBOL</aside>
+          <aside class="border" id="section-blog-aside3">CINE Y MÚSICA</aside>
+          <aside class="border" id="section-blog-aside4"></aside>
+        </section>
+      </main>
+      <footer id="contact">
+        <div class="footer-links">
           <p class="footer-info1"><a href="">SUSCRÍBETE</a></p>
           <p class="footer-info2"><a href="">INSTAGRAM</a></p>
-      </div>
-      <p class="footer-copi">© 2024 HOUSE STUDIO CCC</p>
-  </footer>
-  
-  </body>
+        </div>
+        <p class="footer-copi">© 2024 HOUSE STUDIO CCC</p>
+      </footer>
+    </body>
+  </div>
 </html>

@@ -1,6 +1,6 @@
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,7 +9,6 @@ header nav{
   background-color: #000;
   height: 70px;
   margin-top: auto;
-  
 }
 
 header nav ul{
@@ -39,37 +38,32 @@ transform: scale(1.1);
 color: #333; 
 }
 .section-general {
+  display: grid;
+  grid-template-columns: repeat(2,1fr); /* 3 columnas */
+  font-size: 2rem;
+  gap: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  
   background-image: url("https://c.wallhere.com/photos/cf/24/nyc_blackandwhite_bw_usa_blancoynegro_nikon_unitedstates_noiretblanc-764490.jpg!d");
   padding: 20px;
   height: 200px;
 }
 
-.section-general h1 {
-  display: flex;
-  flex: 1;
-  font-size: 2rem;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-}
-
-#titulo1, #titulo2 {
-  gap: 100px;
+#titulo1, #titulo2{
   color: white;
   margin: 0;
+  font-size: 30px;
 }
 
 .imagenprincipal {
-  width: 250px;
+  width: 230px;
   height: auto;
   border-radius: 50%;
   border: 5px solid #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  margin-top: -200px;
+  margin-top: -210px;
 }
 
 section {
@@ -151,6 +145,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
 h1{
 display: flex;
 justify-content: center;
@@ -158,20 +153,15 @@ align-items: center;
 }
 .section-sobremi {
 display: grid;
-justify-content: center;
-align-items: center;
 text-align: justify;
 background-color: rgb(244, 241, 234);
 gap: 20px;
-
 }
 
 .img-family{
-display: grid;
+display: flex;
 width: 250px;
 height: auto;
-text-align: center;
-justify-content: center;
 }
 .section-blog{
 margin: 0;
@@ -181,8 +171,6 @@ display: grid;
 grid-template-areas: 
 "sitio1 sitio2"
 "sitio3 sitio4";
-grid-template-columns: 50%;
-grid-template-rows: auto;
 height: 50vh;
 
 }
@@ -243,4 +231,12 @@ color: black;
 font-size: 12px;
 color: #666;
 margin-top: 10px;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  height: 80vh;
+
 }
