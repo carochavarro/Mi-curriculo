@@ -1,59 +1,53 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header nav{ 
+header nav {
   align-items: center;
   background-color: #000;
   height: 70px;
-  margin-top: auto;
+  display: flex; /* Agregar flexbox para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
 }
 
-header nav ul{
+header nav ul {
   list-style: none;
   display: flex;
+  gap: 35px;
+  font-size: 10px;
 }
 
-header nav ul li{
+header nav ul li {
   margin-top: 25px;
 }
 
-
-ul{
-  justify-content: center;
-  gap: 35px;
-  font-size: 10px;
-
-}
-.nav-a{
-text-decoration: none;
+.nav-a {
+  text-decoration: none;
   color: white;
-  transition: transform 0.3s ease, color 0.3s ease; 
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 a:hover {
-transform: scale(1.1); 
-color: #333; 
+  transform: scale(1.1);
+  color: #333;
 }
+
+/* Ajustes para sección general */
 .section-general {
   display: grid;
   grid-template-columns: repeat(2,1fr); /* 3 columnas */
-  font-size: 2rem;
-  gap: 250px;
-  display: flex;
   justify-content: center;
   align-items: center;
-
   background-image: url("https://c.wallhere.com/photos/cf/24/nyc_blackandwhite_bw_usa_blancoynegro_nikon_unitedstates_noiretblanc-764490.jpg!d");
-  padding: 20px;
   height: 200px;
 }
 
-#titulo1, #titulo2{
+#titulo1,#titulo2 {
   color: white;
   margin: 0;
+  margin: 0 85px;
   font-size: 30px;
 }
 
@@ -62,7 +56,7 @@ color: #333;
   height: auto;
   border-radius: 50%;
   border: 2px solid rgb(244, 241, 234);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: -210px;
 }
 
@@ -73,165 +67,166 @@ section {
   position: relative;
 }
 
-p {
-  font-size: 1.2rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.section-intro{
+.section-intro {
   background-color: rgb(244, 241, 234);
 }
+
+/* Ajustes para galería */
 .section-galeria {
-display: grid;
-grid-auto-flow: column;
-background-color: black;
-}
-
-.section-galeria {
-background-color: #000; 
-padding: 50px 0;
-text-align: center;
-color: #fff;
-}
-
-.gallery-container {
-display: grid;
-grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-gap: 10px; 
-justify-items: center;
-align-items: center;
-}
-
-.gallery {
-width: 100%;
-max-width: 150px; 
-height: auto;
-border-radius: 10px; 
-}
-.img-family, .gallery:hover{
-  transition: transform 0.3s ease; /* Transición suave */
-  cursor: pointer; /* Cambia el cursor a una mano */
-}
-
-.img-family:hover, .gallery:hover {
-  transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
-}
-
-.grid-container {
-margin: 0;
-padding: 0;
-display: grid;
-grid-template-columns:  30%  70%; /* Ajusta las proporciones de las columnas */
-}
+  display: grid;
+  grid-auto-flow: column;
+  background-color: black;
+  }
+  
+  .section-galeria {
+  background-color: #000; 
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+  }
+  
+  .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 10px; 
+  justify-items: center;
+  align-items: center;
+  }
+  
+  .gallery {
+  width: 100%;
+  max-width: 150px; 
+  height: auto;
+  border-radius: 10px; 
+  }
+  .img-family, .gallery:hover{
+    transition: transform 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor a una mano */
+  }
+  
+  .img-family:hover, .gallery:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+  }
+  
+  .grid-container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns:  30%  70%; /* Ajusta las proporciones de las columnas */
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
 .section-sobremi-h1 {
-background-color: rgb(95, 98, 81);
-font-size: 25px;
-color: white;
-font-weight: bold;
-writing-mode: vertical-lr;
-transform: rotate(180deg); 
-display: flex;
-align-items: center;
-justify-content: center;
+  background-color: rgb(95, 98, 81);
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h1{
-display: flex;
-justify-content: center;
-align-items: center;
-}
 .section-sobremi {
-display: grid;
-text-align: justify;
-background-color: rgb(244, 241, 234);
-gap: 20px;
+  display: grid;
+  text-align: center;
+  background-color: rgb(244, 241, 234);
 }
 
-.img-family{
-display: flex;
-width: 250px;
-height: auto;
+.section-sobremi-parrafo{
+  text-align: justify;
 }
-.section-blog{
-margin: 0;
-padding: 0; 
-background-color: rgb(231, 222, 213);
-display: grid;
-grid-template-areas: 
-"sitio1 sitio2"
-"sitio3 sitio4";
-height: 50vh;
 
+.img-family {
+  display: block; /* Hace que la imagen sea un bloque */
+  margin: 0 auto; /* Auto margen horizontalmente para centrar */
+  width: 250px;
+  height: auto;
 }
-#section-blog-aside1{
-grid-area: sitio1; 
+/* Ajustes para sección blog */
+.section-blog {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(231, 222, 213);
+  display: grid;
+  grid-template-areas:
+    "sitio1 sitio2"
+    "sitio3 sitio4";
+  box-sizing: border-box; /* Incluye el padding dentro del tamaño del elemento */
+  grid-template-columns: 1fr 1fr;
+  height: 50vh;
 }
-#section-blog-2{
-grid-area: sitio2;
+
+#section-blog-aside1 {
+  grid-area: sitio1;
 }
-#section-blog-aside3{
-grid-area: sitio3;
+
+#section-blog-aside2 {
+  grid-area: sitio2;
 }
-#section-blog-aside4{
-grid-area: sitio4;
-} 
+
+#section-blog-aside3 {
+  grid-area: sitio3;
+}
 
 #section-blog-aside4 {
-background-image: url("./IMG/fiesta.jpeg"); 
-background-size: cover; 
-background-position: center; 
-background-repeat: no-repeat; 
-
+  grid-area: sitio4;
+  background-image: url("./IMG/fiesta.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .border {
-font-size: 30px;
-font-weight: bold;
-display: flex;
-align-items: center;
-justify-content: center;  
-border: 0.5px solid black; 
+  font-size: 24px; /* Ajustar el tamaño de fuente si es necesario */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  text-align: center; /* Centrar el texto */
+  box-sizing: border-box;
 }
+
+/* Ajustes para sección footer */
 footer {
-text-align: center;
-padding: 10px;
-background-color: rgb(247, 246, 244);
-color: #333;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(247, 246, 244);
+  color: #333;
 }
 
 .footer-links {
-display: flex;
-justify-content: space-between;
-margin-bottom: 20Spx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.footer-info1, .footer-info2 {
-font-weight: bold;
-font-size: 16px;
-margin: 0 20px;
+.footer-info1,
+.footer-info2 {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 20px;
 }
 
-.footer-info1 a, .footer-info2 a {
-text-decoration: none; 
-color: black; 
+.footer-info1 a,
+.footer-info2 a {
+  text-decoration: none;
+  color: black;
 }
 
 .footer-copi {
-font-size: 12px;
-color: #666;
-margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
 }
 
-#container{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  height: 80vh;
-
-}
-
+/* Ajustes para la sección de experiencias */
 .experiencias {
   text-align: center;
   padding: 50px;
@@ -244,23 +239,18 @@ margin-top: 10px;
   color: white;
 }
 
-.experiencias .description {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 40px;
-}
-
 .episodios-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid responsivo */
   gap: 20px;
 }
 
 .episodio {
-  background-color:rgb(244, 241, 234);
+  background-color: rgb(244, 241, 234);
   padding: 20px;
   border-radius: 8px;
-  width: 200px;
+  width: 100%;
+  max-width: 200px; /* Ajuste de tamaño máximo */
 }
 
 .episodio img {
@@ -286,4 +276,24 @@ margin-top: 10px;
 
 .episodio button:hover {
   background-color: #555;
+}
+
+/* Media Queries para ajustar en diferentes puntos de quiebre */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+
+  .section-general {
+    flex-direction: column; /* Cambiar a columna */
+    gap: 10px; /* Reducir el espacio entre elementos */
+  }
+
+  .experiencias {
+    padding: 20px; /* Reducir padding */
+  }
+
+  .episodios-container {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+  }
 }
