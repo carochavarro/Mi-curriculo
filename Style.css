@@ -205,6 +205,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .footer-info1,
@@ -297,3 +298,17 @@ footer {
     grid-template-columns: 1fr; /* Cambiar a una sola columna */
   }
 }
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center; /* Alinea el texto y el logo verticalmente al centro */
+  text-decoration: none; /* Elimina el subrayado del texto */
+  color: black; /* Color del texto */
+}
+
+.footer-logo {
+  width: 30px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-left: 10px; /* Espacio entre el texto y el logo */
+}
+
